@@ -1,0 +1,20 @@
+Maincode logic:
+- Welcome screen (3s)
+- Menu screen display:
+	+ Options selection ( using 1 variable = selected_index to control following selected option)
+		+ if selected_index = 0 and encoder pressed : Heartrate measure
+		+ if selected_index = 1 and encoder pressed : Basic measure
+		+ if selected_index = 2 and encoder pressed : Kubios 
+		+ if selected_index = 3 and encoder pressed : History
+[]Heartrate measure algorithm
+[]Basic measure algorithm + MQTT sender + update History
+[x]Kubios (need to be tested)
+[x]History ( need to be update when have new data, bug: end the program after running instead of staying in main loop)
+[]Build the interupt for SW_0 button to go back to the menu when press ( idea is using a boolean and  an interupt to control )
+[x] Clean unnnecessary codes 
+
+Problems:
+Update when have the Heartbeat
+Program is now one direction => build up both ways
+loops for mainprogram
+Some of display problems
